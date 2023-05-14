@@ -213,42 +213,39 @@ class LemonTeaPage extends StatelessWidget {
                         color: const Color(0xff39460d),
                       ),
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(top: height * 0.025),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          Icon(
-                            Icons.restore,
-                            color: Colors.grey,
-                            size: width * 0.1,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Icon(
+                          Icons.restore,
+                          color: Colors.grey,
+                          size: width * 0.1,
+                        ),
+                        Icon(
+                          Icons.favorite_border,
+                          color: Colors.grey,
+                          size: width * 0.1,
+                        ),
+                        Container(
+                          width: width * 0.55,
+                          height: height * 0.07,
+                          decoration: BoxDecoration(
+                            color: AppColors.secondaryColor,
+                            borderRadius: BorderRadius.circular(30),
                           ),
-                          Icon(
-                            Icons.favorite_border,
-                            color: Colors.grey,
-                            size: width * 0.1,
-                          ),
-                          Container(
-                            width: width * 0.55,
-                            height: height * 0.07,
-                            decoration: BoxDecoration(
-                              color: AppColors.secondaryColor,
-                              borderRadius: BorderRadius.circular(30),
-                            ),
-                            child: Center(
-                              child: Text(
-                                'Purchase',
-                                style: GoogleFonts.nunitoSans(
-                                  fontSize: 25,
-                                  fontWeight: FontWeight.w700,
-                                  height: 1.3625,
-                                  color: Colors.white,
-                                ),
+                          child: Center(
+                            child: Text(
+                              'Purchase',
+                              style: GoogleFonts.nunitoSans(
+                                fontSize: 25,
+                                fontWeight: FontWeight.w700,
+                                height: 1.3625,
+                                color: Colors.white,
                               ),
                             ),
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
                   ],
                 ),
